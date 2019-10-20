@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AppTrue</id>
+    <version>1.0.0</version>
+    <authors>AppTrue</authors>
+    <owners>AppTrue</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Com.OneSignal" version="3.5.0" exclude="Build,Analyzers" />
+        <dependency id="FreshMvvm" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.2" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugins.Messaging" version="5.2.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Essentials" version="1.2.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="4.2.0.709249" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\GuitarNaja\source\repos\1\AppTrue\AppTrue\AppTrue\bin\Release\netstandard2.0\AppTrue.dll" target="lib\netstandard2.0\AppTrue.dll" />
+  </files>
+</package>

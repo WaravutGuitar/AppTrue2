@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppTrue.Detail"
+             Title="โปรเสริม True move">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame IsClippedToBounds="True"
+                   HasShadow="True"
+                   Padding="0"
+                   BackgroundColor="White">
+                <Frame.Margin>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                Android="10"
+                                iOS="10" />
+                </Frame.Margin>
+                <StackLayout HorizontalOptions="FillAndExpand"
+                             Orientation="Horizontal">
+                    <Frame HorizontalOptions="FillAndExpand"
+                           Margin="0,0,0,0"
+                           HasShadow="False">
+                        <StackLayout  VerticalOptions="CenterAndExpand">
+                            <Label x:Name="Header" 
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="Red"
+                                   FontSize="Large"
+                                   />
+                            <BoxView Color="Gray"
+                                     HeightRequest="1"
+                                     HorizontalOptions="Fill" />
+                            <Label x:Name="detail"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="Small" />
+                            <BoxView Color="Gray"
+                                     HeightRequest="1"
+                                     HorizontalOptions="Fill" />
+                            <Button x:Name="btn_click"
+                                Text="กดเพื่อสมัคร*900*8328*17407413#"
+                                    Clicked="BtnCall_Click"
+                                    BackgroundColor="Red"
+                                    TextColor="White"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

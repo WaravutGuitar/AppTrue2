@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local1="clr-namespace:AppTrue"
+            mc:Ignorable="d"
+            x:Class="AppTrue.ManuMain"
+            Title="โปรเสริม True move"
+            BarTextColor="Red"
+            x:Name="Tap">
+    <!--Pages can be added as references or inline-->
+
+
+    <!--<TabbedPage.ItemTemplate>
+        <DataTemplate>
+            <ContentPage Title="{Binding title}">
+                <StackLayout>
+                    <ListView x:Name="DetailList"
+                              HasUnevenRows="True"
+                              ItemsSource="{Binding }"
+                              ItemSelected="OnItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <local1:CardViewTemplate />
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ContentPage>
+        </DataTemplate>
+
+    </TabbedPage.ItemTemplate>-->
+    <!--<ContentPage Title="เน็ตเต็มสปีด">
+        <StackLayout>
+            <ListView x:Name="Emplist"
+                      HasUnevenRows="True"
+                      ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <local1:CardViewTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>-->
+    <!--<ContentPage Title="เน็ตไม่ลดสปีด">
+        <StackLayout>
+            <ListView x:Name="Emplist2"
+                      HasUnevenRows="True"
+                      ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <local1:CardViewTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="เน็ตไม่ลดสปีด+โทร">
+        <StackLayout>
+            <ListView x:Name="Emplist3"
+                      HasUnevenRows="True"
+                      ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <local1:CardViewTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>-->
+</TabbedPage>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppTrue.CardViewTemplate">
+  <ContentView.Content>
+        <StackLayout>
+            <Frame IsClippedToBounds="True"
+                   HasShadow="True"
+                   Padding="0"
+                   BackgroundColor="White">
+                <Frame.Margin>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                Android="5"
+                                iOS="5" />
+                </Frame.Margin>
+                <StackLayout HorizontalOptions="FillAndExpand"
+                             Orientation="Horizontal">
+                    <Frame HorizontalOptions="FillAndExpand"
+                           Margin="0,0,0,0"
+                           HasShadow="False">
+                        <Grid VerticalOptions="CenterAndExpand"
+                              Padding="0"
+                              HorizontalOptions="FillAndExpand"
+                              BackgroundColor="Transparent">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <!--<StackLayout Grid.Row="0"
+                                     Grid.Column="0">
+                            <Frame>
+                                <Image  Source="logo.png"
+                                        HeightRequest="50" />
+                            </Frame>
+                        </StackLayout>-->
+                            <StackLayout Grid.Row="0"
+                                         Grid.Column="0"
+                                         Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding title}"
+                                           TextColor="Red"
+                                           FontSize="Medium" />
+                                    <!--<Label Text="{Binding name}" />-->
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding tel}"
+                                           FontSize="Small" />
+                                    <!--<Label Text="{Binding idQRCode }" />-->
+                                </StackLayout>
+                                <!--<StackLayout Orientation="Horizontal">
+                                <Label Text="Salary :" />
+                                <Label Text="{Binding idQRCodePlant }" />
+                            </StackLayout>-->
+                            </StackLayout>
+                            <StackLayout Grid.Row="0"
+                                         Grid.Column="2"
+                                         Orientation="Vertical"
+                                         HorizontalOptions="End">
+                                <!--<StackLayout Orientation="Horizontal">
+                                    <Label Text="Name :" />
+                                    <Label Text="{Binding name}" />
+                                </StackLayout>-->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding pricing}"
+                                           TextColor="Red"
+                                           FontSize="Small" />
+                                    <Image Source="icon3.png" />
+                                    <!--<Button  x:Name="btn3"
+                                             BackgroundColor="White"
+                                             Image="icon2.png"
+                                             HorizontalOptions="CenterAndExpand"
+                                             />-->
+                                </StackLayout>
+
+
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
